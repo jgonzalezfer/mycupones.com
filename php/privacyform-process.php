@@ -25,7 +25,7 @@ if (empty($_POST["terms"])) {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "yourname@domain.com";
+$EmailTo = "vomales714@talmetry.com";
 $Subject = "New privacy request from Sync landing page";
 
 // prepare email body text
