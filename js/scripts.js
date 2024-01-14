@@ -1,6 +1,6 @@
-/* Template: Sync - Free Mobile App Landing Page HTML Template
-   Author: Inovatik
-   Created: Dec 2019
+/* Template: Mycupones
+   Author: mystudiodev
+   Created: Dec 2023
    Description: Custom JS file
 */
 
