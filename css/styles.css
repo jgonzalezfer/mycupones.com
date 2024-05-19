@@ -2202,3 +2202,50 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+
+.text-container-parallax {
+    position: relative;
+    z-index: 3;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+	border-radius: 20px;
+}
+
+.image-container-parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%; /* Ajusta la altura para un efecto de paralaje más pronunciado */
+    overflow: hidden; /* Oculta el desbordamiento */
+    z-index: 2;
+}
+.image-container-parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1f2fa; /* Color overlay */
+    mix-blend-mode: multiply; /* Blend the overlay with the image */
+    z-index: 2; /* Ensure overlay is above the image but below the text */
+}
+
+.image-container-parallax img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%; /* Increase width to make image larger */
+    height: auto;
+    transform: translate(-50%, -50%) scale(1.2); /* Center the image and scale it */
+    filter: blur(5px); /* Add blur effect to the image */
+    z-index: 1;
+    transition: transform 0.5s ease; /* Agrega una transición suave */
+}
+
+/* Efecto de paralaje al desplazarse */
+.container:hover .image-container-parallax img {
+    transform: translateX(-50%) translateY(-50%);
+}
