@@ -8,7 +8,13 @@ Una aplicación web para gestionar y utilizar cupones de descuento. Con `mycupon
 - [Uso](#uso)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Contribución](#contribución)
+-------------------------------
+
 - [Licencia](#licencia)
+- https://mycupones.netlify.app/terms-conditions
+- https://mycupones.netlify.app/privacy-policy
+
+-------------------------------
 - [Autores](#autores) jgonzalezfer
 
 ## Instalación
